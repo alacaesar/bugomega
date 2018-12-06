@@ -1,0 +1,12 @@
+{
+  "version": "0.1.0",
+  "configurations": [
+  {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Launch Chrome",
+      "url": "http://localhost:8888/radar/",
+      "webRoot": "/Applications/MAMP/htdocs/radar"
+  }
+  ]
+}

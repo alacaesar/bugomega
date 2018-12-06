@@ -1,0 +1,107 @@
+@font-face {
+  font-family: "graphik";
+  src: url("../fonts/Graphik-Regular.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "graphik";
+  src: url("../fonts/Graphik-Medium.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "graphik";
+}
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+#container {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+header {
+  padding: 50px 100px;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.4s ease-out;
+}
+
+body.scrolled header {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px 100px;
+}
+
+body.mobile header {
+  padding-left: 20px;
+  padding-right: 20px;
+  grid-template-columns: 100%;
+  grid-template-rows: 50px 30px;
+}
+
+.page {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: grid;
+  grid-template-rows: minmax(500px, 100vh) auto;
+}
+
+header h1 {
+  font-size: 28px;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  text-align: right;
+}
+body.mobile nav {
+  text-align: left;
+}
+nav ul li {
+  display: inline-block;
+  margin-right: 30px;
+}
+nav ul li a {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+h2 {
+  color: #000000;
+  font-weight: normal;
+  font-size: 50px;
+  width: 80%;
+  max-width: 480px;
+  margin: calc(50vh - 80px) auto 0 100px;
+}
+body.mobile h2 {
+  font-size: 38px;
+  margin: calc(100vh - 250px) auto 0 20px;
+}
+
+.bottom {
+  background: #fff;
+  height: 1000px;
+  padding: 100px;
+}
